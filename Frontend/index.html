@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="styles/heroPage.css" rel="stylesheet">
+    <title>ShowSync</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>
+            <img src="https://png.pngtree.com/png-clipart/20231115/original/pngtree-movie-icon-icon-photo-png-image_13562247.png"
+                class="logo">
+        </div>
+        <h1> ShowSync </h1>
+        <div class="logo">
+            <i id="logo" class='bxr  bx-cog'></i>
+            <div id="settings" class="settings">
+                <div class="admin_settings">
+                    <button class="Add_movie" onclick="/Frontend/pages/addMovie.html">Add movie</button>
+                    <button class="Update_movie">Update Movie</button>
+                    <button class="Delete_movie">Delete Movie</button>
+                </div>
+                <button class="Profile">Profile</button>
+                <button class="LogOut">Log out</button>
+            </div>
+            <div>
+                <a href="pages/Register.html">
+                    <button class="btn">Register</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="search_bar_container">
+            <form action="/search" method="get">
+                <input class="search_bar" type="text" name="query"
+                    placeholder="Search for movies, actors, directors...">
+                <button type="submit" class="search_button"><i class='bx bx-search-alt'></i></button>
+            </form>
+            <a href="pages/advancedSearch.html">
+                <p class="advanced_search">Advanced Search</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="movie_cards"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/fetchMovies.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
