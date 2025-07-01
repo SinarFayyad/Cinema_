@@ -133,7 +133,7 @@ class Movie extends Model{
             'poster_url' => $this->poster_url,
             'trailer_url' => $this->trailer_url,
             'release_year' => $this->release_year,
-            'screening_date' => $this->screening_date            
+            'screening_date' => $this->screening_date->format('Y-m-d H:i:s')          
             
         ];
     }
