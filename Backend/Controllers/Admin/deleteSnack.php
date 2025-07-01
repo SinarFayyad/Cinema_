@@ -1,4 +1,4 @@
 <?php
 require("deleteAll.php");
-deleteData($mysqli, 'movies')
+deleteData($mysqli,'snacks');
 ?>
