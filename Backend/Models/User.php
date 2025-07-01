@@ -4,20 +4,20 @@ require_once("Model.php");
 
 class User extends Model {
     private int $id;
-    private string $name;
     private int $age;
-    private string $address;
+    private string $name;
     private string $email;
+    private string $address;
     private string $password;
 
     public static string $table = "Users";
 
     public function __construct(array $array) {
         $this->id = $array["id"];
-        $this->name = $array["name"];
         $this->age = $array["age"];
-        $this->address =$address["address"];
+        $this->name = $array["name"];
         $this->email = $array["email"];
+        $this->address =$address["address"];
         $this->password = $array["password"];
     }
 
@@ -72,11 +72,11 @@ class User extends Model {
     public function toArray() {
         return [
             'id' => $this->id,
-            'name' => $this->name,
             'age' => $this->age,
+            'name' => $this->name,
             'email' => $this->email,
-            'password' => $this->password,
-            'address'=>$this->address
+            'address'=> $this->address,
+            'password' => $this->password
         ];
     }
 }
