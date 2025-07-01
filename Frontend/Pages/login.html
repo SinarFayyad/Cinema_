@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/login_register.css" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="circle">
+        <h2>Login</h2>
+        <a href="../index.html">
+            <i class='bxr  bx-x'></i>
+        </a>
+    </div>
+    <section>
+
+        <form action="http://localhost/projects/Cinema/Backend/Models/login.php" method="post">
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button>Login</button>
+        </form>
+
+        <p>Don't have an account?
+            <a href="/Frontend/pages/register.html">
+                <button>Register</button>
+            </a>
+        </p>
+    </section>
+
+</body>
+
+</html>
