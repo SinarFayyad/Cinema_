@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(movies => {
         for (let i = 0; i < movies.length; i++) {
         const movie = movies[i];
-        container.innerHTML += `<div class=".movie_card">
+        container.innerHTML += `<div class="movie_card">
                               <img class="cover " src= "${movie.poster_url}"/>
                               <video class="trailer " src= "${movie.trailer_url}"></video>
                               <div class="movie_info">

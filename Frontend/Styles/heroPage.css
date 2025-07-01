@@ -77,13 +77,19 @@ h1{
     font-weight: bold;
     font-size:1em;
     margin-top:0.5vw;
+    /* width:100%; 
+    border-bottom: 1px solid var(--secondary-color);*/
     display: block;
     height:3vw;
-    padding-bottom: 4vh;
+    padding-bottom: 1vh;
     cursor: pointer;
 }
+/* 
+.settings button:nth-last-child{
+    border:none;
+} */
 .btn{
-    display: block;
+    display:none;
     height:2rem; 
     width:6em;
     position:absolute;
@@ -94,6 +100,7 @@ h1{
     border-radius: 5px;
     color: var(--text-color);
     cursor: pointer;
+
 }
 
 .border {
@@ -149,44 +156,45 @@ a{
     width:90vw;
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 50vw;
     position:relative;
     top:10vh;
-    left:7vw;
+    left:10vw;
+    gap:3vw;
     padding-bottom: 10vh;
 }
 
 .movie_card {
-    width: 20vw;
-    height: 55vh;
+    min-width:13vw;
+    max-width: 16vw;
+    height: auto;
+    text-align: center;
     background-color: var(--primary-color);
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
 }
 .cover{ 
     min-height:20vh;
-    max-height:30vh;
-    min-width:7vw;
-    max-width:15vw;
+    max-height:25vh;
+    min-width:8vw;
+    max-width:10vw;
     margin: 1vw ;
+    margin-bottom: 0;
     position:relative;
-}
-
-.trailer {
-    min-height:20vh;
-    max-height:30vh;
-    min-width:7vw;
-    max-width:15vw;
-    margin: 1vw ;
-    position:relative;
-    display: none;
 }
 
 .movie_info{
     display: block;
-    text-align: left;
-    margin-bottom: 1vw;
+    margin: 1vw;
+    margin-top: 0;
 }
 
+.movie_info i{
+    margin-right: 1vw;
+}
+
+.movie_card i {
+    display: inline-block;
+}
