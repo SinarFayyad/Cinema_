@@ -8,7 +8,8 @@ $query = "CREATE TABLE users (
     age INT,
     email VARCHAR(250) NOT NULL UNIQUE,
     password VARCHAR(250) NOT NULL,
-    address VARCHAR(100) NOT NULL
+    address VARCHAR(100) NOT NULL,
+    price DECIMAL(5,2) NOT NULL
 )";
 
 $execute = $mysqli->prepare($query);
