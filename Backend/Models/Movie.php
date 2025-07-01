@@ -41,11 +41,11 @@ class Movie extends Model{
         $this->id = $id;
     }
 
-    public function getname(): string{
+    public function getName(): string{
         return $this->name;
     }
 
-    public function setname($name) {
+    public function setName($name) {
         $this->name= $name;
     }
 

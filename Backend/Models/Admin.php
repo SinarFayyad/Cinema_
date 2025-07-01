@@ -19,28 +19,28 @@ class Admin extends Model {
     public function getId():int  {
         return $this->id;
     }
-    public function setId(int $id) {
+    public function setId($id) {
         $this->id = $id;
     }
 
     public function getName():string {
         return $this->name;
     }
-    public function setUsername(string $Name) {
+    public function setUsername($name) {
         $this->name = $name;
     }
 
     public function getEmail():string {
         return $this->email;
     }
-    public function setEmail(string $email) {
+    public function setEmail($email) {
         $this->email = $email;
     }
 
     public function getPassword():string  {
         return $this->password;
     }
-    public function setPassword(string $password) {
+    public function setPassword($password) {
         $this->password = $password;
     }
 
