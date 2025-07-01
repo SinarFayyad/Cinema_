@@ -1,5 +1,6 @@
 <?php
 require("getAll.php");
-fetchData( $mysqli,'payments');
+fetchData($mysqli,'seats');
+
 return;
 ?>

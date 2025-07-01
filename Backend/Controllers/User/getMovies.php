@@ -1,5 +1,5 @@
 <?php
 require("getAll.php");
-fetchData( $mysqli ,'Movie');
+fetchData( $mysqli ,'movies');
 return;
 ?>

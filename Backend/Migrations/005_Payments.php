@@ -2,7 +2,7 @@
 
 require("../Connection/connection.php");
 
-$query = "CREATE TABLE IF NOT EXISTS payments (
+$query = "CREATE TABLE payments (
   id INT AUTO_INCREMENT PRIMARY KEY,
   user_name INT NOT NULL,
   ticket_id INT NOT NULL,
