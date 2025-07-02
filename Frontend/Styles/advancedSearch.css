@@ -1,0 +1,155 @@
+:root {
+    --main_color: #000000;
+    --secondary_color: #800707;
+    --text_color: #ffffff;
+    --shadow_color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: var(--main_color);
+    color: var(--text_color)
+}
+
+.circle {
+    border-radius: 0 0 50% 50%;
+    width: 100%;
+    min-height: 20vh;
+    max-height: 30vh;
+    background-color: var(--secondary_color);
+    text-align: center;
+}
+
+i {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 3vw;
+    color: var(--text_color);
+    cursor: pointer;
+}
+
+section {
+    margin: 3vw 7vw;
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 80vw;
+    background-color: var(--secondary_color);
+    display: block;
+    border: none;
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+section button {
+    padding: 0.52vw 0.78vw;
+    background-color: var(--main_color);
+    color: var(--text_color);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+h2 {
+    position: relative;
+    top: 1em;
+    font-weight: bold;
+    font-size: 2vw;
+    display: inline-block;
+}
+
+.border {
+    border: 1px solid yellow;
+}
+
+.filter-container {
+    border: 1px solid #ccc;
+}
+
+.filter-group {
+    margin: 2vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.filter-label {
+    width:7vw;
+    display: block;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 4vw 1vw 2vw;
+    color: var(--text_color);
+}
+
+.filter-options {
+    display: flex;
+    gap: 1vw;
+}
+
+.filter-option {
+    background-color: var(--shadow_color);
+    color: var(--text_color);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 1.5vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    width:5vw;
+}
+
+.movie_cards{
+    width:95vw;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    top:5vh;
+    left:2.5vw;
+    gap:3vw;
+    z-index: 0;
+    padding-bottom: 10vh;
+}
+
+.movie_card {
+    min-width:13vw;
+    max-width: 16vw;
+    height: auto;
+    text-align: center;
+    background-color:var(--secondary_color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+
+}
+.cover{ 
+    min-height:20vh;
+    max-height:25vh;
+    min-width:8vw;
+    max-width:10vw;
+    margin: 1vw ;
+    margin-bottom: 0;
+    position:relative;
+}
+
+.movie_info{
+    display: block;
+    margin: 1vw;
+    margin-top: 0;
+}
+
+.movie_info i{
+    margin-right: 1vw;
+}
+
+.movie_card i {
+    display: inline-block;
+}

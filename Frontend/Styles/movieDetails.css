@@ -1,0 +1,123 @@
+:root {
+    --main_color: #000000;
+    --secondary_color: #800707;
+    --text_color: #ffffff;
+    --shadow_color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: var(--main_color);
+    color: var(--text_color)
+}
+
+.circle {
+    border-radius: 0 0 50% 50%;
+    width: 100%;
+    min-height: 20vh;
+    max-height: 30vh;
+    background-color: var(--secondary_color);
+    text-align: center;
+}
+
+i {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 3vw;
+    color: var(--text_color);
+    cursor: pointer;
+}
+
+section {
+    margin: 3vw 7vw;
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 80vw;
+    background-color: var(--secondary_color);
+    display: block;
+    border: none;
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+section button {
+    padding: 0.52vw 0.78vw;
+    background-color: var(--main_color);
+    color: var(--text_color);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+h2 {
+    position: relative;
+    top: 1em;
+    font-weight: bold;
+    font-size: 2vw;
+    display: inline-block;
+}
+
+
+.border {
+    border: 1px solid yellow;
+}
+
+.movie_details_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2vw;
+    text-align: left;
+}
+.movie_details img{
+    min-width:20vw;
+    max-width:40vw;
+    min-height: 20vh;
+    max-width: 25vh;
+    position:relative;
+    margin:2vw;
+}
+
+.movie_details_info {
+    align-items:flex-start;
+    width: 30vw;
+    gap: 1vw;
+    margin:1vw;
+    color: var(--text_color);
+}
+.movie_details p{
+    font-size: 1.74vw;
+    margin: 1vw 0;
+    font-weight: bold;
+}
+
+.movie_details span{
+    font-weight: normal;
+    color: var(--text_color);
+    font-size: 1.5vw;
+}
+
+.Buy_ticket{
+    width:fit-content;
+}
+.buy_ticket_button {
+    width:fit-content;
+    display:inline-block;
+    background-color: var(--main_color);
+    color: var(--text_color);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5vw;
+}

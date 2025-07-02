@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="Styles/heroPage.css" rel="stylesheet">
+    <title>K-Cinema</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>
+            <img src="https://png.pngtree.com/png-clipart/20231115/original/pngtree-movie-icon-icon-photo-png-image_13562247.png"
+                class="logo">
+        </div>
+        <h1> K-Cinema</h1>
+        <div class="logo">
+            <i id="logo" class='bxr  bx-cog'></i>
+            <div id="settings" class="settings">
+                <div class="admin_settings">
+                    <a href="Pages/addMovie.html"><button class="Add_movie" >Add movie</button></a>
+                    <button class="Update_movie">Update Movie</button>
+                    <button class="Delete_movie">Delete Movie</button>
+                </div>
+                <button class="Profile">Profile</button>
+                <button class="LogOut">Log out</button>
+            </div>
+            <div>
+                <a href="Pages/register.html">
+                    <button class="btn">Register</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="search_bar_container">
+            <form action="/search" method="get">
+                <input class="search_bar" type="text" name="query"
+                    placeholder="Search for movies, actors, directors...">
+                <button type="submit" class="search_button"><i class='bx bx-search-alt'></i></button>
+            </form>
+            <a href="Pages/advancedSearch.html">
+                <p class="advanced_search">Advanced Search</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="movie_cards">
+
+        <a href="Pages/movieDetails.html"><div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzuYmaSOFfSNJgMrVcnJcUmJc0z-dvo5u9oTEnIwS8hrzozM9I5k3v6Bi-hFtWsv1zq82AsQ" />
+            <div class="movie_info">
+                <h3 class="Title">Brave Citizen</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div></a>
+
+        <div class="movie_card">
+            <img class="cover " src="https://asianwiki.com/images/2/25/Midnight-KM-mp01.jpg" />
+            <div class="movie_info">
+                <h3 class="Title">Midnight</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://upload.wikimedia.org/wikipedia/en/1/1b/Midnight_Runners.jpg" />
+            <div class="movie_info">
+                <h3 class="Title">Midnight Runners</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpM21hFph_sAlh45TDryuR4-_8D6o1mX-NZwf4Meq71PkR-I57cBXYWVR8xB_8gkC8XRb3Rg" />
+            <div class="movie_info">
+                <h3 class="Title">Forgetten</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+        
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZBIcc-gNu7H5jhRs9jjuMIcB5Zzec-HmEkIedK2IcnfE4aCtHCHfEuS5fA22UZRuBUg&usqp=CAU" />
+            <div class="movie_info">
+                <h3 class="Title">The point man</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://m.media-amazon.com/images/M/MV5BODVhNzU4NTUtODU4ZS00ZjI5LTg0MjktNDQ4M2U4ZDcwZmFiXkEyXkFqcGc@._V1_.jpg" />
+            <div class="movie_info">
+                <h3 class="Title">Unlocked</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star-half'  ></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://m.media-amazon.com/images/M/MV5BMzkzZGU3N2ItMGE4OC00NDFkLWJkNjUtNWU2Njk5ZDZkYmM0XkEyXkFqcGc@._V1_.jpg" />
+            <div class="movie_info">
+                <h3 class="Title">Decibel</h3>
+                <span><i class='bxr  bx-star'></i></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKcXpzbmZVlP4Y3ROdddPbA06FBnlBti5N1dDuIB-vDN_rH-1Ed5d11II7c4MeUomyr4&usqp=CAU" />
+            <div class="movie_info">
+                <h3 class="Title">Soar into the Sun</h3>
+                <span></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx9LzCftXonNgActo22CAlSUKR_BJVXNckhVsAM6zFOpIkt7U_I49POzlJB1nnWriqLVdF" />
+            <div class="movie_info">
+                <h3 class="Title">Pipeline</h3>
+                <span></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTctPxZ50YEFWMTv1XsGYbJ23FKJPkDtCHBF_0JKHkqwtWg3IMy7YqvjZGMDKCcNIPl64tuxw" />
+            <div class="movie_info">
+                <h3 class="Title">The childe</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star-half'  ></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHr0EA9HbG3lpxpslx1iWkAxfCGJcU-gxZPaRXrqChNDmEqV-7eqgJ2VR-gx3EiQxPCvA" />
+            <div class="movie_info">
+                <h3 class="Title">The killer</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i></i></span>
+            </div>
+        </div>
+
+        <div class="movie_card">
+            <img class="cover " src="https://m.media-amazon.com/images/M/MV5BYzFjNjYyYTMtOTI4MS00YjE1LTllZDYtZjk0NzI5ZjUxZjYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
+            <div class="movie_info">
+                <h3 class="Title">Escape</h3>
+                <span><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star'></i><i class='bxr  bx-star-half'  ></i></span>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./Scripts/getMovies.js"></script>
+        <script src="./Scripts/index.js"></script>
+</body>
+
+</html>
