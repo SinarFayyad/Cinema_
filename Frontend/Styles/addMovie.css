@@ -80,11 +80,12 @@ label{
     margin-left: 1.2vw;
 }
 
-.cover-preview,
-.trailer-preview {
-  display: none;
-  max-width: 100%;
-  margin-top: 10px;
+.cover,
+.trailer {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 10px;
+    height: auto;
 }
 
 h2{

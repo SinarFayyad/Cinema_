@@ -21,19 +21,19 @@
             <div class="form-holder">
                 <form action="http:localhost//Cinema_/Backend/Models/addMovie.php" method="post" enctype="multipart/form-data">
                     <div class="filmAdder">
-                        <div class="cover-trailer">
+                        <div class="cover">
                             <div class="form-cover">
-                                <input type="file" id="cover-input" accept="image/*" class="hidden" name="cover">
+                                <input type="file" id="cover-input"name="cover">
                                 <label for="cover-input" class="cover-input">
                                     <span id="cs">Add Cover Pic</span>
                                     <img class="cover-preview hidden">
                                 </label>
                             </div>
-                            <div class="form-trailer">
+                            <div class="trailer">
                                 <input type="file" id="trailer-input" accept="video/*" class="hidden" name="trailer">
                                 <label for="trailer-input" class="trailer-input">
                                     <span id="ts">Add Trailer</span>
-                                    <video controls class="trailer-preview hidden" autoplay></video>
+                                    <video class="trailer-preview hidden" ></video>
                                 </label>
                             </div>
                         </div>
