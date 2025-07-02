@@ -35,7 +35,7 @@ i {
 }
 
 section {
-    margin: 3vw 8vw;
+    margin: 3vw 7vw;
     background-color: var(--secondary_color);
     color: var(--text_color);
     text-align: center;
@@ -106,57 +106,50 @@ h2 {
     width:5vw;
 }
 
-
-.movie_cards {
-    width: 90vw;
+.movie_cards{
+    width:95vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 4vw;
-    position: relative;
-    top: 1vw;
-    left: 9vw;
+    position:relative;
+    top:5vh;
+    left:2.5vw;
+    gap:3vw;
+    z-index: 0;
     padding-bottom: 10vh;
 }
 
 .movie_card {
-    position: relative;
-    right: 1vw;
-    width: 20vw;
-    height: 55vh;
-    background-color: var(--secondary_color);
+    min-width:13vw;
+    max-width: 16vw;
+    height: auto;
+    text-align: center;
+    background-color:var(--secondary_color);
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
+
+}
+.cover{ 
+    min-height:20vh;
+    max-height:25vh;
+    min-width:8vw;
+    max-width:10vw;
+    margin: 1vw ;
+    margin-bottom: 0;
+    position:relative;
 }
 
-.cover {
-    min-height: 20vh;
-    max-height: 30vh;
-    min-width: 7vw;
-    max-width: 15vw;
-    margin: 1vw;
-    position: relative;
-}
-
-.trailer {
-    min-height: 20vh;
-    max-height: 30vh;
-    min-width: 7vw;
-    max-width: 15vw;
-    margin: 1vw;
-    position: relative;
-    display: none;
-}
-
-.movie_info {
+.movie_info{
     display: block;
-    text-align: left;
-    margin-bottom: 1vw;
+    margin: 1vw;
+    margin-top: 0;
 }
 
-a {
-    text-decoration: none;
+.movie_info i{
+    margin-right: 1vw;
 }
 
+.movie_card i {
+    display: inline-block;
+}

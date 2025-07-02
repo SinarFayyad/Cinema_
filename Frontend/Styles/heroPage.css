@@ -127,6 +127,7 @@ h1{
     margin-left:0.4em;
     background-color: var(--secondary-color);
     padding:0;
+    z-index: 1;
 }
 
 .search_button {
@@ -153,14 +154,14 @@ a{
     color: var(--text-color);
 }
 .movie_cards{
-    width:90vw;
+    width:95vw;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50vw;
     position:relative;
     top:10vh;
-    left:10vw;
+    left:2.5vw;
     gap:3vw;
+    z-index: 0;
     padding-bottom: 10vh;
 }
 
@@ -174,6 +175,7 @@ a{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
+
 }
 .cover{ 
     min-height:20vh;
