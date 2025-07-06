@@ -7,7 +7,7 @@ $query = "CREATE TABLE tickets (
   user_name VARCHAR(250) NOT NULL,
   movie_name VARCHAR(250) NOT NULL,
   screening_time DATETIME NOT NULL,
-  seat_id INT NOT NULL,
+  seat_id INT NOT NULL, NOT NULL,
   movie_price DECIMAL(5,2) NOT NULL,
   snacks_price DECIMAL(5,2) NOT NULL,
   
