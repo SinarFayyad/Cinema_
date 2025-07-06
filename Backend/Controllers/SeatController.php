@@ -1,7 +1,7 @@
 <?php
 
-require("../requireAll.php");
 require("UtilityController.php");
+
 
 function createSeat($mysqli) 
 {

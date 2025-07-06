@@ -1,5 +1,5 @@
 <?php
-require("../requireAll.php");
+require("UtilityController.php");
 
 function createTicket($mysqli) 
 {
