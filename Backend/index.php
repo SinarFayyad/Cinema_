@@ -21,7 +21,7 @@ if ($request == '') {
 if (isset($apis[$request])) {
     $controller_name = $apis[$request]['controller']; //if $request == /articles, then the $controller_name will be "ArticleController" 
     $method = $apis[$request]['method'];
-    require_once "controllers/{$controller_name}.php";
+    require_once "Controllers/{$controller_name}.php";
 
     $controller = new $controller_name();
     if (method_exists($controller, $method)) {
