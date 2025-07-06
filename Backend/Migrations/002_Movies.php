@@ -7,7 +7,7 @@ $query = "CREATE TABLE movies (
     genre VARCHAR(100),
     release_year YEAR,
     screening_date DATETIME,
-    price DECIMAL(5,2) NOT NULL
+    price DECIMAL(5,2) NOT NULL,
     location VARCHAR(100),
     poster_url TEXT,
     cast TEXT,

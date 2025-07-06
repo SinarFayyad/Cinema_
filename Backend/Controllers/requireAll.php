@@ -8,7 +8,6 @@ header("Access-Control-Allow-Headers: Content-Type");
 require("../Connection/connection.php");
 
 require("../Models/Admin.php");
-require("../Models/Model.php");
 require("../Models/Movie.php");
 require("../Models/Payment.php");
 require("../Models/Seat.php");

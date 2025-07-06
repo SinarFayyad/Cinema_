@@ -4,12 +4,12 @@ require("../Connection/connection.php");
 
 $email = $_POST['email']?? '';
 
-$stmt = $mysqli->prepare("SELECT email, password FROM users WHERE email =?");
+$stmt = $mysqli->prepare("SELECT email FROM users WHERE email =?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
-$result = $stmt->get_result();
+$result = $stmt->get_result()->fetch_assoc();
 
-if ($row = $result->fetch_assoc()== null)
+if ($result== null)
 {
     $name = $_POST['name']?? '';
     $password = $_POST['password']?? '';
@@ -19,15 +19,17 @@ if ($row = $result->fetch_assoc()== null)
     $stmt = $mysqli->prepare("INSERT INTO users (name, email, password,address, age) VALUES (?,?,?,?,?)");
     $stmt->bind_param("sssss", $name, $email,$password ,$address, $age);
 
-
     if ($stmt->execute()) {
         header("Location: ../../Frontend/index.html");
+        // redierct to js or let it as it is ?
     } else {
         echo "Error: ". $stmt->error;
     }
+
 }else {
     echo "This email already exist! Try to login!";
-    header("Location: ../../Frontend/pages/login.html");
+    // header("Location: ../../Frontend/pages/login.html");
+    // to js then to html 
 }
 
 ?>
