@@ -15,16 +15,6 @@ if ($request == '') {
     $request = '/';
 }
 
-//Examples: 
-//http://localhost/getArticles -------> $request = "getArticles"
-//http://localhost/ -------> $request = "/" (why? because of the if)
-
-// This block is used to extract the route name from the URL
-//----------------------------------------------------------
-
-
-
-
 //Routing Logic here 
 //This is a dynamic logic, that works on any array... 
 //----------------------------------------------------------
