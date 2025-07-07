@@ -1,15 +1,5 @@
 <?php
 
-require('../Controllers/UserController.php');
-require('../Controllers/MovieController.php');
-require('../Controllers/SnackController.php');
-require('../Controllers/SeatController.php');
-require('../Controllers/PaymentController.php');
-require('../Controllers/TicketController.php');
-require('../Controllers/AdminController.php');
-require('../Controllers/AuthController.php');
-
-
 $apis = [
 
     //User apis
