@@ -11,13 +11,14 @@ $result = $stmt->get_result()->fetch_assoc();
 
 if ($result== null)
 {
-    $name = $_POST['name']?? '';
-    $password = $_POST['password']?? '';
-    $address = $_POST['address']?? '';
-    $age = $_POST['age']?? '';
+    $user_info = [
+        'name' = $_GET['name']?? '';
+        'password' = $_GET['password']?? '';
+        'address' = $_GET['address']?? '';
+        'age' = $_GET['age']?? '';
+    ];
 
-    $stmt = $mysqli->prepare("INSERT INTO users (name, email, password,address, age) VALUES (?,?,?,?,?)");
-    $stmt->bind_param("sssss", $name, $email,$password ,$address, $age);
+    User::create($mysqli , 'User', $user_info);
 
     if ($stmt->execute()) {
         header("Location: ../../Frontend/index.html");

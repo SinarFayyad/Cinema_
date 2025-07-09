@@ -1,7 +1,6 @@
 <?php 
 
 require("../Models/Movie.php");
-require("../Models/Model.php");
 require("../Connection/connection.php");
 
 $movies = [];

@@ -10,7 +10,7 @@ class User extends Model {
     private string $address;
     private string $password;
 
-    public static string $table = "Users";
+    public static string $table = "users";
 
     public function __construct(array $array) {
         $this->id = $array["id"];

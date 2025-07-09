@@ -1,7 +1,6 @@
 <?php 
 
 require("../Models/Ticket.php");
-require("../Models/Model.php");
 require("../Connection/connection.php");
 
 $tickets = [];

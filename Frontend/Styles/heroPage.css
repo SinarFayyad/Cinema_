@@ -89,7 +89,7 @@ h1{
     border:none;
 } */
 .btn{
-    display:none;
+    display:block;
     height:2rem; 
     width:6em;
     position:absolute;
@@ -166,8 +166,7 @@ a{
 }
 
 .movie_card {
-    min-width:13vw;
-    max-width: 16vw;
+    width: 16vw;
     height: auto;
     text-align: center;
     background-color: var(--primary-color);

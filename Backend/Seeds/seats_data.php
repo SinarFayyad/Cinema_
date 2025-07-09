@@ -1,7 +1,6 @@
 <?php 
 
 require("../Models/Seat.php");
-require("../Models/Model.php");
 require("../Connection/connection.php");
 
 $seats = [];

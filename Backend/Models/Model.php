@@ -1,15 +1,19 @@
 <?php 
+echo "Model_ ";
+
 abstract class Model{
 
     protected static string $table;
     protected static string $primary_key = "name";
 
-    public static function create(mysqli $mysqli, $data)
+    public static function create(mysqli $mysqli,  $data)
     {
         $key = implode(',', array_keys($data));
         $value = "'" . implode( "','", array_values($data)) ."'";
 
         $sqlQuery = "INSERT INTO static::$table ($key) VALUES ($value)";
+        $query = $mysqli->prepare($sqlQuery);
+        $query->execute();
     }
 
     public static function getAll(mysqli $mysqli){

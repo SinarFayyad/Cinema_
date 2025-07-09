@@ -8,7 +8,7 @@ class Payment extends Model {
     private int $ticket_id;
     private string $payment_method;
 
-    public static string $table = "Payments";
+    public static string $table = "payments";
 
     public function __construct(array $array) {
 

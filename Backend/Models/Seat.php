@@ -7,7 +7,8 @@ class Seat extends Model {
     private bool $is_available;
     private string $row_number;
     private string $column_number;
-    public static string $table = "Seats";
+    
+    public static string $table = "seats";
 
     public function __construct(array $array) {
         $this->id = $array["id"];

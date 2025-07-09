@@ -1,56 +1,56 @@
 <?php 
 
 require("UtilityController.php");
+require("./Models/Payment.php");
 
-
-function createPayment($mysqli) 
-{
-    $payment_info = [
-        'amount' => $_POST['amount'] ?? '',
-        'method' => $_POST['method'] ?? '',
-        'user_id' => $_POST['user_id'] ?? ''
-    ];
-
-    $sql = create($mysqli, $payment_info);
-    return $sql;
-}
-
-function getPayments($mysqli) 
-{
-    if (isset($_GET['id'])) 
+class PaymentController {
+    function createPayment($mysqli) 
     {
-        $id = $_GET['id'];
-        fetchByID($mysqli, 'Payment', $id); 
-    } 
-    else 
-    {
-        fetchAll($mysqli, 'Payment');
+        $payment_info = [
+            'amount' => $_GET['amount'] ?? '',
+            'method' => $_GET['method'] ?? '',
+            'user_id' => $_GET['user_id'] ?? ''
+        ];
+
+        $sql = createData($mysqli,'Payment', $payment_info);
+        return $sql;
     }
-}
 
-function updatePayment($mysqli) 
-{
-    if (isset($_GET['id']) && isset($_POST['data'])) 
+    function getPayments($mysqli) 
     {
-        $id = $_GET['id'];
-        $data = json_decode($_POST['data'], true);
-        updateDataByID($mysqli, 'Payment', $data, $id); 
-    } 
-    else 
+        if (isset($_GET['id'])) 
+        {
+            $id = $_GET['id'];
+            fetchByID($mysqli, 'Payment', $id); 
+        } 
+        else 
+        {
+            fetchAll($mysqli, 'Payment');
+        }
+    }
+
+    function updatePayment($mysqli) 
     {
+        if (isset($_GET['id']) && isset($_POST['data'])) 
+        {
+            $id = $_GET['id'];
+            $data = json_decode($_POST['data'], true);
+            return updateDataByID($mysqli, 'Payment', $data, $id); 
+            
+        } 
         echo "No identifier or data provided for update.";
     }
-}
 
-function deletePayment($mysqli) 
-{
-    if (isset($_GET['id'])) 
+    function deletePayment($mysqli) 
     {
-        $id = $_GET['id'];
-        deleteDataByID($mysqli, 'Payment', $id);
-    } 
-    else 
-    {
-        echo "No identifier provided for deletion.";
+        if (isset($_GET['id'])) 
+        {
+            $id = $_GET['id'];
+            deleteDataByID($mysqli, 'Payment', $id);
+        } 
+        else 
+        {
+            echo "No identifier provided for deletion.";
+        }
     }
 }

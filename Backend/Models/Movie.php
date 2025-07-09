@@ -16,7 +16,7 @@ class Movie extends Model{
     private DATETIME $screening_date;
     
     
-    public static string $table = "Movies";
+    public static string $table = "movies";
 
     public function __construct(array $array) {
         $this->id = $array["id"];

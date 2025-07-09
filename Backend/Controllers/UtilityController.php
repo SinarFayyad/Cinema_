@@ -1,12 +1,38 @@
 <?php
+
+echo "Controllers_ ";
 require("requireAll.php");
+
+
+
+function createData(mysqli $mysqli, string $modelName, array $data)
+{
+    $response = [];
+    $response["status"] = 200;
+
+    new $modelName($data);
+    echo" Created succssfully_ ";
+
+    $item = $modelName::create($mysqli, $data);
+    
+    echo "Item created_ ";
+    if ($item) {
+        $response["item"] = $item->toArray();
+    } else {
+        $response["status"] = 500;
+        $response["message"] = "Failed to create item.";
+    }
+
+    echo json_encode($response);
+    return;
+}
 
 function fetchAll(mysqli $mysqli, string $modelName)
 {
     $response = [];
     $response["status"] = 200;
 
-    $allItems = $modelName::all($mysqli);
+    $allItems = $modelName::getAll($mysqli);
     $response["allItems"] = [];
     foreach ($allItems as $item) {
         $response["allItems"][] = $item->toArray();

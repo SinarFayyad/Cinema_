@@ -1,7 +1,6 @@
 <?php 
 
 require("../Models/User.php");
-require("../Models/Model.php");
 require("../Connection/connection.php");
 
 $users = [];

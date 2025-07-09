@@ -9,7 +9,8 @@ class Snack extends Model{
     private bool $available;
     private string $description;
 
-    public static string $table = "Snacks";
+    public static string $table = "snacks";
+    
     public function __construct(array $array) {
         $this->id = $array["id"];
         $this->name = $array["name"];
